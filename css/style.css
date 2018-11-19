@@ -1,0 +1,173 @@
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer-menu li a:hover {
+  color: #999;
+  text-decoration: none;
+}
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li { list-style: none }
+
+.fix{overflow:hidden}
+
+
+/*=======================================
+menu css
+====================================*/
+
+
+.logo {
+  padding: 26px 0;
+  transition: all 0.3s ease 0s;
+}
+.logo h4 {
+  font-weight: 600;
+  margin: 0;
+}
+.main-menu {
+  float: right;
+}
+.main-menu li {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  transition: all 0.3s ease 0s;
+}
+.main-menu > li:last-child:after{display:none}
+.main-menu li a {
+  color: #232332;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  text-transform: uppercase;
+}
+.main-menu > li > a::before {
+  background: #666666 none repeat scroll 0 0;
+  bottom: 23px;
+  content: "";
+  height: 1px;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s ease 0s;
+  width: 0px;
+}
+.main-menu > li > a {
+  padding: 30px 0;
+}
+.main-menu li:hover > a {
+  color: #999;
+}
+.main-menu li:hover > a:before{opacity:1;width:15px;}
+.main-menu li ul {
+  background: #222 none repeat scroll 0 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  float: none;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: 110%;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 200px;
+  z-index: 11;
+}
+.main-menu li:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.main-menu li ul li {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  display: block;
+  float: none;
+  margin: 0;
+}
+.main-menu li ul li:last-child {
+  border-bottom: 0 none;
+  margin: 0;
+}
+.main-menu li ul li a i{float:right}
+/* --------------------------
+  Child Sub menu
+-----------------------------*/
+.main-menu li ul li ul {
+  left: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  visibility: hidden;
+  z-index: 999;
+}
+.main-menu li ul li:hover > ul {
+  opacity: 1;
+  top: 0;
+  visibility: visible;
+}
+.main-menu li ul li a {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  font-size: 10px;
+  padding: 10px 15px;
+}
+.main-menu li ul li:hover > a {
+  background: rgba(51, 51, 51, 0.5) none repeat scroll 0 0;
+  color: #fff;
+}
+.main-menu li ul li a span {
+  float: right;
+}
+.menu-area .menu-p-right ul {
+  left: auto;
+  right: 0;
+}
+.main-menu .menu-p-right ul li ul {
+  right: 100%;
+}
+
+/*===============================
+Sticky CSS
+================================*/
+
+.sticky {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+background: #ffffff none repeat scroll 0 0;
+box-shadow: 0 -1px 0 #f5f5f5 inset;
+transition: height 0.3s ease-out 0s, box-shadow 0.3s ease-out 0s;
+z-index: 1030;
+}
+.sticky .logo h4 {
+  color: #222;
+}
+.sticky .logo {
+  padding: 19px 0;
+}
+.sticky .main-menu > li > a {
+  padding: 23px 0;
+}
+.sticky .main-menu > li::after {
+  top: 25px;
+}
+.sticky .main-menu > li > a::before {
+  bottom: 17px;
+}

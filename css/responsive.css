@@ -1,0 +1,41 @@
+/*--------- Medium devices -----------*/
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+
+/*--------- TSmall devices Tablets ------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+.md-100{
+    max-width: 100%;
+}
+.main-menu li {
+  margin-left: 30px;
+}
+
+}
+
+
+/*------------ Extra small devices ------------*/
+@media (max-width: 767px) {
+.main-menu li {
+  margin-left: 0;
+}
+.main-menu > li > a::before {
+  display: none;
+}
+    .md-100{
+    max-width: 100%;
+}
+.sticky .mean-container a.meanmenu-reveal {
+  margin-top: -46px;
+}
+
+}
+
+/*----------- Large Mobile -------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+}
